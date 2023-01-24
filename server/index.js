@@ -1,7 +1,9 @@
 import express from 'express';
+import indexRoutes from './routes/index.routes.js'; 
 
 const app = express();
 
-app.listen(3000);
+app.use(indexRoutes);
+app.listen(3001);
 
-console.log("Servidor ejecutandose en el puerto 3000.");
+console.log("Servidor ejecutandose en el puerto 3001.");
