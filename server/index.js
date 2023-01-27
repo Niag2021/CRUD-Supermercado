@@ -1,11 +1,9 @@
 import express from "express";
 import colors from "colors";
 import db from "./src/db/db.js";
-import cors from 'cors';
 
 const app = express(); 
 
-app.use(cors())
 app.use(express.json())
 
 try{
